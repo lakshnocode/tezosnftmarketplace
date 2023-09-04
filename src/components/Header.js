@@ -28,7 +28,7 @@ const Header = ({ Tezos, wallet, setTezos }) => {
     <div className="ui menu black" style={{ marginTop: "5px" }}>
        
       <a href="/#" className="ui header item">
-        Home
+        Trapezium
       </a>
     
       {selector.userAddress !== "" ? (
@@ -37,6 +37,9 @@ const Header = ({ Tezos, wallet, setTezos }) => {
        
         
       ) : null}
+      <Link className="item" to="/">
+        Home
+      </Link>
 
       {selector.userAddress !== "" ? (
         <Link className="item" to="/Create">
